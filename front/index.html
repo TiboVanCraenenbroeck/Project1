@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FoodPlate</title>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/screen.css">
+    <script src="./script/main.js"></script>
+    <script src="./script/cookies.js"></script>
+    <script src="./script/dataHandler.js"></script>
+    <script src="./script/modalBox.js"></script>
+    <script src="/script/translation.js"></script>
+    <script src="./script/Login.js"></script>
+</head>
+
+<body>
+    <header class="o-row o-row--neutral-xx-dark">
+        <div class="o-container">
+            <div class="c-header">
+                <div class="c-header__logo">
+                    <h1 class="c-logo">
+                        FoodPlate
+                    </h1>
+                </div>
+                <div class="c-header__nav">
+                    <nav class="c-nav">
+                        <ul class="o-list c-nav__list">
+                            <li class="c-nav__item js-modal-box--open"><span class="c-nav__link c-link-cta js-translation">
+                                Sign in
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="o-row o-row--neutral-xx-orange o-row--xl">
+        <div class="o-container u-max-width">
+            <div class="c-intro o-layout o-layout--gutter o-layout--align-center o-layout--row-reverse">
+                <div class="o-layout__item u-2-of-3-bp2 u-1-of-2-bp3">
+                    <figure class="c-tint--orange">
+                        <picture>
+                            <img src="img/DSC_0204.JPG" alt="FoodPlate toestel">
+                        </picture>
+                    </figure>
+                </div>
+                <div class="o-layout__item u-2-of-3-bp2 u-1-of-2-bp3">
+                    <div class="u-max-width-sm">
+                        <h1 class="c-lead c-lead--xl u-background--black js-translation">
+                            FoodPlate
+                        </h1>
+                        <p class="c-lead c-lead--md">
+                                <span class="js-translation">Don't let your food get cold</span>!
+                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="o-row">
+        <div class="o-container u-max-width">
+            <article class="o-section o-section--xl">
+                <div class="o-layout o-layout--gutter-xl o-layout--justify-center o-layout--align-center">
+                    <div class="o-layout__item u-2-of-3-bp2 u-1-of-2-bp3">
+                        <figure class="c-tint--orange">
+                            <picture>
+                                <img src="img/DSC_0201.JPG" alt="FoodPlate toestel">
+                            </picture>
+                        </figure>
+                    </div>
+                    <div class="o-layout__item u-2-of-3-bp2 u-1-of-2-bp3">
+                        <h2 class="c-lead c-lead--lg js-translation">
+                            Purpose
+                        </h2>
+                        <p class="c-lead c-lead--md js-translation">
+                            This plate makes sure that your food doesn't get cold when you're eating
+                        </p>
+                    </div>
+                </div>
+            </article>
+            <article class="o-section o-section--xl">
+                <div
+                    class="o-layout o-layout--gutter-xl o-layout--justify-center o-layout--align-center o-layout--row-reverse">
+                    <div class="o-layout__item u-2-of-3-bp2 u-1-of-2-bp3">
+                        <figure>
+                            <picture class="c-tint--orange">
+                                <img src="img/DSC_0177.JPG" alt="FoodPlate toestel">
+                            </picture>
+                        </figure>
+                    </div>
+                    <div class="o-layout__item u-2-of-3-bp2 u-1-of-2-bp3">
+                        <h2 class="c-lead c-lead--lg js-translation">
+                            Safety
+                        </h2>
+                        <p class="c-lead c-lead--md js-translation">
+                            The gyrosscope sensor detects when you are tilting your board
+                        </p>
+                    </div>
+                </div>
+            </article>
+            <article class="o-section o-section--xl">
+                <div class="o-layout o-layout--gutter-xl o-layout--justify-center o-layout--align-center">
+                    <div class="o-layout__item u-2-of-3-bp2 u-1-of-2-bp3">
+                        <figure class="c-tint--orange">
+                            <picture>
+                                <img src="img/carlos-muza-84523-unsplash.jpg" alt="Data">
+                            </picture>
+                        </figure>
+                    </div>
+                    <div class="o-layout__item u-2-of-3-bp2 u-1-of-2-bp3">
+                        <h2 class="c-lead c-lead--lg js-translation">
+                            Data
+                        </h2>
+                        <p class="c-lead c-lead--md js-translation">
+                            All your data is encrypted and stored in a database
+                        </p>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+    <div class="c-modal js-box">
+        <div class="c-modal-content">
+            <span class="c-close js-close">&times;</span>
+            <section class="o-row o-row--xl">
+                <div class="o-container u-max-width js-inputfields">
+                    <div class="o-layout o-layout--gutter o-layout--justify-center o-layout--align-center">
+                        <div class="o-layout__item u-2-of-3-bp2 u-1-of-2-bp3">
+                            <h2 class="c-lead c-lead--lg u-color--black js-translation">
+                                Sign in
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="o-layout o-layout--gutter o-layout--justify-center o-layout--align-center">
+                        <div class="o-layout__item u-2-of-3-bp2 u-1-of-2-bp3">
+                            <p class="c-lead c-lead--md js-error">
+                            </p>
+                        </div>
+                    </div>
+                    <div class="o-layout o-layout--gutter o-layout--justify-center o-layout--align-center">
+                        <div class="o-layout__item u-2-of-3-bp2 u-1-of-2-bp3">
+                            <p class="c-lead c-lead--md">
+                                <label for="username" class="c-label"><span class="js-translation">Username</span>:</label>
+                                <input type="text" id="username" class=" js-username c-input c-input--orange-light"
+                                    required>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="o-layout o-layout--gutter o-layout--justify-center o-layout--align-center">
+                        <div class="o-layout__item u-2-of-3-bp2 u-1-of-2-bp3">
+                            <p class="c-lead c-lead--md">
+                                <label for="username" class="c-label"><span class="js-translation">Password</span>:</label>
+                                <input type="password" id="password" class="js-password c-input c-input--orange-light"
+                                    required>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="o-layout o-layout--gutter o-layout--justify-center o-layout--align-center">
+                        <div class="o-layout__item u-2-of-3-bp2 u-1-of-2-bp3">
+                            <p class="c-lead c-lead--md">
+                                <input type="submit" class="js-button--login c-button c-button--orange js-translation--btn" value="Sign in">
+                            </p>
+                        </div>
+                    </div>
+                    <div class="o-layout o-layout--gutter o-layout--justify-center o-layout--align-center">
+                        <div class="o-layout__item u-2-of-3-bp2 u-1-of-2-bp3">
+                            <p class="c-lead c-lead--md js-button--forgot-password js-translation">Forgot Password</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>

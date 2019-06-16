@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FoodPlate</title>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/screen.css">
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"
+        integrity="sha256-yr4fRk/GU1ehYJPAs8P4JlTgu0Hdsp4ZKrx8bDEDC3I=" crossorigin="anonymous"></script> -->
+    <script src="/script/main.js"></script>
+    <script src="/script/cookies.js"></script>
+    <script src="/script/dataHandler.js"></script>
+    <script src="/script/accountCheck.js"></script>
+    <script src="/script/modalBox.js"></script>
+    <script src="/script/translation.js"></script>
+    <script src="/script/settings.js"></script>
+</head>
+
+<body>
+    <header class="o-row o-row--neutral-xx-dark">
+        <div class="o-container">
+            <div class="c-header">
+                <div class="c-header__logo">
+                    <h1 class="c-logo">
+                        FoodPlate
+                    </h1>
+                </div>
+                <div class="c-header__nav">
+                    <nav class="c-nav">
+                        <ul class="o-list c-nav__list">
+                            <li class="c-nav__item js-login"><a href="/home"
+                                    class="c-nav__link c-link-cta js-translation">Temperature</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="o-row o-row--neutral-xx-orange o-row--xl">
+        <div class="o-container u-max-width">
+            <div class="o-layout o-layout--gutter o-layout--justify-center o-layout--align-center">
+                <div class="o-layout__item u-2-of-3-bp2 u-1-of-2-bp3">
+                    <h2 class="c-lead c-lead--lg u-color--black js-translation">
+                        Data
+                    </h2>
+                </div>
+            </div>
+            <div class="o-layout o-layout--gutter o-layout--justify-center o-layout--align-center">
+                <div class="o-layout__item u-2-of-3-bp2 u-1-of-2-bp3">
+                    <p class="c-lead c-lead--md js-error--userdata">
+                    </p>
+                </div>
+            </div>
+            <div class="o-layout o-layout--gutter o-layout--justify-center o-layout--align-center">
+                <div class="o-layout__item u-2-of-3-bp2 u-1-of-2-bp3">
+                    <p class="c-lead c-lead--md">
+                        <label for="username"><span class="js-translation">Username</span>:</label><input type="text" id="username"
+                            class="c-input--orange js-username">
+                    </p>
+                </div>
+            </div>
+            <div class="o-layout o-layout--gutter o-layout--justify-center o-layout--align-center">
+                <div class="o-layout__item u-2-of-3-bp2 u-1-of-2-bp3">
+                    <p class="c-lead c-lead--md">
+                        <label for="voornaam"><span class="js-translation">First name</span>:</label><input type="text" id="voornaam"
+                            class="c-input--orange js-surname">
+                    </p>
+                </div>
+            </div>
+            <div class="o-layout o-layout--gutter o-layout--justify-center o-layout--align-center">
+                <div class="o-layout__item u-2-of-3-bp2 u-1-of-2-bp3">
+                    <p class="c-lead c-lead--md">
+                        <label for="name"><span class="js-translation">Name</span>:</label><input type="text" id="name" class="c-input--orange js-name">
+                    </p>
+                </div>
+            </div>
+            <div class="o-layout o-layout--gutter o-layout--justify-center o-layout--align-center">
+                <div class="o-layout__item u-2-of-3-bp2 u-1-of-2-bp3">
+                    <p class="c-lead c-lead--md">
+                        <label for="mail"><span class="js-translation">Mail</span>:</label><input type="email" id="mail" class="c-input--orange js-mail">
+                    </p>
+                </div>
+            </div>
+            <div class="o-layout o-layout--gutter o-layout--justify-center o-layout--align-center">
+                <div class="o-layout__item u-2-of-3-bp2 u-1-of-2-bp3">
+                    <p class="c-lead c-lead--md">
+                        <input type="submit" class="c-button--orange js-btn--change-personaldata js-translation--btn" value="Change">
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="o-row o-row--xl">
+        <div class="o-container u-max-width">
+            <div class="o-layout o-layout--gutter o-layout--justify-center o-layout--align-center">
+                <div class="o-layout__item u-2-of-3-bp2 u-1-of-2-bp3">
+                    <h2 class="c-lead c-lead--lg js-translation">
+                        Password
+                    </h2>
+                </div>
+            </div>
+            <div class="o-layout o-layout--gutter o-layout--justify-center o-layout--align-center">
+                <div class="o-layout__item u-2-of-3-bp2 u-1-of-2-bp3">
+                    <p class="c-lead c-lead--md js-error--changePassword">
+                    </p>
+                </div>
+            </div>
+            <div class="o-layout o-layout--gutter o-layout--justify-center o-layout--align-center">
+                <div class="o-layout__item u-2-of-3-bp2 u-1-of-2-bp3">
+                    <p class="c-lead c-lead--md">
+                        <label for="currentPassword"><span class="js-translation">Current password</span>:</label><input type="password"
+                            id="currentPassword" class="c-input--black js-current-password">
+                    </p>
+                </div>
+            </div>
+            <div class="o-layout o-layout--gutter o-layout--justify-center o-layout--align-center">
+                <div class="o-layout__item u-2-of-3-bp2 u-1-of-2-bp3">
+                    <p class="c-lead c-lead--md">
+                        <label for="newPassword"><span class="js-translation">New password</span>:</label><input type="password" id="newPassword"
+                            class="c-input--black js-new-password">
+                    </p>
+                </div>
+            </div>
+            <div class="o-layout o-layout--gutter o-layout--justify-center o-layout--align-center">
+                <div class="o-layout__item u-2-of-3-bp2 u-1-of-2-bp3">
+                    <p class="c-lead c-lead--md">
+                        <label for="confirmNewPassword"><span class="js-translation">Confirm new password</span>:</label><input type="password"
+                            id="confirmNewPassword" class="c-input--black js-confirm-new-password">
+                    </p>
+                </div>
+            </div>
+            <div class="o-layout o-layout--gutter o-layout--justify-center o-layout--align-center">
+                <div class="o-layout__item u-2-of-3-bp2 u-1-of-2-bp3">
+                    <p class="c-lead c-lead--md">
+                        <input type="submit" class="c-button--black js-btn--change-password js-translation--btn" value="Change">
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="o-row o-row--neutral-xx-orange o-row--xl">
+        <div class="o-container u-max-width">
+            <div class="o-layout o-layout--gutter o-layout--justify-center o-layout--align-center">
+                <div class="o-layout__item u-2-of-3-bp2 u-1-of-2-bp3">
+                    <h2 class="c-lead c-lead--lg u-color--black js-translation">
+                        Language
+                    </h2>
+                </div>
+            </div>
+            <div class="o-layout o-layout--gutter o-layout--justify-center o-layout--align-center">
+                <div class="o-layout__item u-2-of-3-bp2 u-1-of-2-bp3">
+                    <p class="c-lead c-lead--md js-error--lang">
+                    </p>
+                </div>
+            </div>
+            <div class="o-layout o-layout--gutter o-layout--justify-center o-layout--align-center">
+                <div class="o-layout__item u-2-of-3-bp2 u-1-of-2-bp3">
+                    <p class="c-lead c-lead--md">
+                        <label for="lang"><span class="js-translation">Language</span>:</label><select class="c-input--orange js-select_lang"
+                            id="lang"></select>
+                    </p>
+                </div>
+            </div>
+            <div class="o-layout o-layout--gutter o-layout--justify-center o-layout--align-center">
+                <div class="o-layout__item u-2-of-3-bp2 u-1-of-2-bp3">
+                    <p class="c-lead c-lead--md">
+                        <input type="submit" class="c-button--orange js-btn--change-lang js-translation--btn" value="Change">
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="o-row o-row--xl">
+        <div class="o-container u-max-width">
+            <div class="o-layout o-layout--gutter o-layout--justify-center o-layout--align-center">
+                <div class="o-layout__item u-2-of-3-bp2 u-1-of-2-bp3">
+                    <p class="c-lead c-lead--md">
+                        <input type="submit" class="c-button--black js-modal-box--open js-translation--btn" value="Add new user">
+                    </p>
+                </div>
+            </div>
+            <div class="o-layout o-layout--gutter o-layout--justify-center o-layout--align-center">
+                <div class="o-layout__item u-2-of-3-bp2 u-1-of-2-bp3">
+                    <p class="c-lead c-lead--md">
+                        <input type="submit" class="c-button--black js-btn--sign-out js-translation--btn" value="Logout">
+                    </p>
+                </div>
+            </div>
+            <div class="o-layout o-layout--gutter o-layout--justify-center o-layout--align-center">
+                    <div class="o-layout__item u-2-of-3-bp2 u-1-of-2-bp3">
+                        <p class="c-lead c-lead--md">
+                            <input type="submit" class="c-button--black js-btn--shut-down js-translation--btn" value="Shut down">
+                        </p>
+                    </div>
+                </div>
+        </div>
+    </section>
+    <div class="c-modal js-box">
+        <div class="c-modal-content">
+            <span class="c-close js-close">&times;</span>
+            <section class="o-row o-row--xl">
+                <div class="o-container u-max-width">
+                    <div class="o-layout o-layout--gutter o-layout--justify-center o-layout--align-center">
+                        <div class="o-layout__item u-2-of-3-bp2 u-1-of-2-bp3">
+                            <h2 class="c-lead c-lead--lg u-color--black js-translation">Add new user</h2>
+                        </div>
+                    </div>
+                    <div class="o-layout o-layout--gutter o-layout--justify-center o-layout--align-center">
+                        <div class="o-layout__item u-2-of-3-bp2 u-1-of-2-bp3">
+                            <p class="c-lead c-lead--md js-error--add-user">
+                            </p>
+                        </div>
+                    </div>
+                    <div class="o-layout o-layout--gutter o-layout--justify-center o-layout--align-center">
+                        <div class="o-layout__item u-2-of-3-bp2 u-1-of-2-bp3">
+                            <p class="c-lead c-lead--md">
+                                <label for="mail-new-user" class="c-label"><span class="js-translation">email address</span>:</label><input type="email"
+                                    id="mail-new-user" class="c-input c-input--orange-light js-mailadres-new-user">
+                            </p>
+                        </div>
+                    </div>
+                    <div class="o-layout o-layout--gutter o-layout--justify-center o-layout--align-center">
+                        <div class="o-layout__item u-2-of-3-bp2 u-1-of-2-bp3">
+                            <p class="c-lead c-lead--md">
+                                <input type="submit" class="c-button c-button--orange js-btn--add-new-user js-translation--btn"
+                                    value="Add">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>

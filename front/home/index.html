@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FoodPlate</title>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/screen.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.js"
+        integrity="sha256-vyehT44mCOPZg7SbqfOZ0HNYXjPKgBCaqxBkW3lh6bg=" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"
+        integrity="sha256-yr4fRk/GU1ehYJPAs8P4JlTgu0Hdsp4ZKrx8bDEDC3I=" crossorigin="anonymous"></script> -->
+    <script src="/script/main.js"></script>
+    <script src="/script/cookies.js"></script>
+    <script src="/script/dataHandler.js"></script>
+    <script src="/script/accountCheck.js"></script>
+    <script src="/script/translation.js"></script>
+    <script src="/script/home.js"></script>
+</head>
+
+<body>
+    <header class="o-row o-row--neutral-xx-dark">
+        <div class="o-container">
+            <div class="c-header">
+                <div class="c-header__logo">
+                    <h1 class="c-logo">
+                        FoodPlate
+                    </h1>
+                </div>
+                <div class="c-header__nav">
+                    <nav class="c-nav">
+                        <ul class="o-list c-nav__list">
+                            <li class="c-nav__item js-login"><a href="/settings/"
+                                    class="c-nav__link c-link-cta js-translation">Settings</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="o-row o-row--neutral-xx-orange o-row--xl">
+        <div class="o-container u-max-width">
+            <div class="o-layout o-layout--gutter o-layout--justify-center o-layout--align-center">
+                <div class="o-layout__item u-2-of-3-bp2 u-1-of-2-bp3">
+                    <h2 class="c-lead c-lead--lg u-color--black js-translation">
+                        Temperature
+                    </h2>
+                </div>
+            </div>
+            <div class="o-layout o-layout--gutter o-layout--justify-center o-layout--align-center">
+                <div class="o-layout__item u-2-of-3-bp2 u-1-of-2-bp3">
+                    <p class="c-lead c-lead--md u-big">
+                        <span class="js-current-temp">0</span><span>°</span>
+                    </p>
+                </div>
+            </div>
+            <div class="o-layout o-layout--gutter o-layout--justify-center o-layout--align-center">
+                <div class="o-layout__item u-2-of-3-bp2 u-1-of-2-bp3">
+                    <p class="c-lead c-lead--md">
+                        <label for="temp"><span class="js-translation">Desired temperature</span><span>:</span></label><input type="number" min="1" max="63" id="temp"
+                            class="js-temp c-input--orange js-target-temp">
+                    </p>
+                </div>
+            </div>
+            <div class="o-layout o-layout--gutter o-layout--justify-center o-layout--align-center">
+                <div class="o-layout__item u-2-of-3-bp2 u-1-of-2-bp3">
+                    <p class="c-lead c-lead--md">
+                        <input type="submit" class="c-button--black c-button--border js-btnTemp--stop js-translation--btn" value="Stop">
+                        <input type="submit" class="c-button--orange js-btnTemp--start js-translation--btn" value="Start">
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="o-row o-row--xl">
+        <div class="o-container u-max-width">
+            <div class="o-layout o-layout--gutter o-layout--justify-center o-layout--align-center">
+                <div class="o-layout__item u-2-of-3-bp2 u-1-of-2-bp3">
+                    <h2 class="c-lead c-lead--lg js-translation">
+                        Temperature
+                    </h2>
+                </div>
+            </div>
+            <div class="o-layout o-layout--gutter o-layout--justify-center o-layout--align-center">
+                <div class="o-layout__item u-2-of-3-bp2 u-1-of-2-bp3">
+                    <p class="c-lead c-lead--md">
+                        <canvas id="chartTemperature" width="100%"></canvas>
+                    </p>
+                </div>
+            </div>
+    </section>
+</body>
+
+</html>
